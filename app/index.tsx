@@ -9,7 +9,7 @@ export default function Index() {
       
       }}
     >
-      <Link href={"/login"} style={{flex:1,justifyContent:'center',alignItems:'center'}}>
+      <Link href={" /login"} style={{flex:1,justifyContent:'center',alignItems:'center'}}>
       <Text style={{fontFamily:'montserrat',fontSize:20}}>Go to login screen</Text>
       </Link>
     </View>

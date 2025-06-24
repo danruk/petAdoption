@@ -1,7 +1,11 @@
+import { useNavigation } from '@react-navigation/native';
+import { router } from 'expo-router';
 import { Image, Pressable, Text, View } from 'react-native';
 import Colors from '../../constants/Colors';
 
 export default function LoginScreen() {
+  const navigation = useNavigation();
+
   return (
     <View style={{
       backgroundColor:Colors.WHITE,
@@ -32,6 +36,7 @@ export default function LoginScreen() {
         width:'100%',
         borderRadius:14,
       }}
+      onPress={() => router.replace('/(tabs)/home')}
       >
         <Text
         style={{
